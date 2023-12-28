@@ -65,6 +65,7 @@ fun HomeScreen(
             onDetailClick = onDetailClick,
             onDeleteClick = {
 
+                viewModel.deleteKontak(it.id)
                 viewModel.getKontak()
             }
         )
